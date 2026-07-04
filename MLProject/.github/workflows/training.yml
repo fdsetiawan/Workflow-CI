@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Workflow-CI/MLProject
+        working-directory: MLProject
 
     steps:
       - name: Checkout Repository
