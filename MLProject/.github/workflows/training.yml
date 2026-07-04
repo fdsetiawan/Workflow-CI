@@ -34,7 +34,7 @@ jobs:
 
       - name: Run MLflow Project
         run: |
-          mlflow run . --env-manager local
+          mlflow run . --env-manager=local
 
       - name: Upload MLruns Artifact
         uses: actions/upload-artifact@v4
