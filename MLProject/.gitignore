@@ -1,0 +1,6 @@
+.venv/
+.vscode/
+mlruns/
+
+__pycache__/
+*.pyc

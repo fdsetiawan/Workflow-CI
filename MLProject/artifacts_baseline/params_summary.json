@@ -1,0 +1,22 @@
+{
+    "model_type": "RandomForestClassifier",
+    "target_column": "diabetes",
+    "dataset_path": "diabetes_prediction_preprocessed.csv",
+    "data_rows": 96146,
+    "data_columns": 9,
+    "train_rows": 76916,
+    "test_rows": 19230,
+    "test_size": 0.2,
+    "random_state": 42,
+    "continuous_features": "age,bmi,HbA1c_level,blood_glucose_level",
+    "binary_features": "hypertension,heart_disease",
+    "categorical_features": "gender,smoking_history",
+    "preprocessing_in_modelling": true,
+    "scaler": "StandardScaler",
+    "encoder": "OneHotEncoder(handle_unknown='ignore')",
+    "rf_n_estimators": 120,
+    "rf_max_depth": 12,
+    "rf_min_samples_split": 4,
+    "rf_min_samples_leaf": 2,
+    "rf_class_weight": "balanced"
+}

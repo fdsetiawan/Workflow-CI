@@ -1,0 +1,20 @@
+name: DiabetesPredictionMLProject
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      dataset_path:
+        type: string
+        default: diabetes_prediction_preprocessed.csv
+      experiment_name:
+        type: string
+        default: Diabetes_Prediction_Baseline
+      tracking_uri:
+        type: string
+        default: file:./mlruns
+      artifact_dir:
+        type: string
+        default: artifacts_baseline
+    command: "python modelling.py --dataset-path {dataset_path} --experiment-name {experiment_name} --tracking-uri {tracking_uri} --artifact-dir {artifact_dir}"
